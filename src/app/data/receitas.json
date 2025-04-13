@@ -1,0 +1,11 @@
+[{
+    "title": "Macarrão Carbonara",
+    "description": "",
+    "photo": "",
+    "price": 100,
+    "id": 1,
+    "category": {
+        "id": 1,
+        "label": "Massas"
+    }
+}]
