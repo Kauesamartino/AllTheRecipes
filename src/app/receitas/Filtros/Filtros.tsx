@@ -16,13 +16,13 @@ export default function Filtros({filtro, setFiltro}: Props){
     }
 
     return(
-        <div className="flex gap-[24px] flex-wrap mx-[20px]">
+        <div className="flex gap-[24px] mr-[20px]">
             {filtros.map(opcao => (
                 <Button 
                     key={opcao.id}
                     onClick={() => selecionarFiltro(opcao)}
                     label={opcao.label}
-                    className={`flex items-center justify-center bg-gray-300 border-none rounded-md text-base font-bold h-10 w-38 ${filtro === opcao.id ? 'bg-blue-500 text-white' : ''} hover:cursor-pointer`}
+                    className={`flex items-center justify-center bg-gray-300 border-none rounded-md text-base font-bold h-10 min-w-[180px] ${filtro === opcao.id ? 'bg-blue-500 text-white shadow-[0_0_0_2px_#000]' : ''} hover:bg-blue-500 hover:text-white hover:shadow-[0_0_0_1px_#000]`}
                 />
             ))}
         </div>
