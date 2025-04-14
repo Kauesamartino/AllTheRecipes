@@ -9,7 +9,9 @@ import { Prato } from '../../types/Prato'
 
 
 export default function TagsPratos({
-    category
+    category,
+    serving,
+    description
 }: Prato) {
     return (
         <>
@@ -19,6 +21,8 @@ export default function TagsPratos({
                     <div className={`tipo ${category.label.toLowerCase() === 'massas' ? 'bg-massas text-white' : ''} ${category.label.toLowerCase() === 'carnes' ? 'bg-carnes text-white' : ''} ${category.label.toLowerCase() === 'doces' ? 'bg-doces' : ''}`}>
                         {category.label}
                     </div>
+                    <div className="">{serving}</div>
+                    <div className="">{description}</div>
                 </div>
             </div>
         </>

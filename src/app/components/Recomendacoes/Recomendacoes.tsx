@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 import receitas from '../../data/receitas.json'
 import { Prato } from '../../types/Prato';
 
-export default function () {
+export default function Recomendacoes() {
     let receitasRecomendadas = [...receitas];
     receitasRecomendadas = receitasRecomendadas.sort(() => 0.5 - Math.random()).splice(0, 3);
 
