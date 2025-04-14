@@ -21,7 +21,7 @@ export default function Footer() {
             <div className="bg-[#ffd5b5] relative py-2">
                 {integrantes.map(item => (
                     <div key={item.id} className="flex justify-center">
-                        <div className="pb-1">{item.name} - RM{item.rm}</div>
+                        <div className="pb-1 font-bold">{item.name} - RM{item.rm}</div>
                     </div>
                 ))}
             </div>

@@ -4,6 +4,12 @@ import { useState } from "react";
 import Filtros from "./Filtros/Filtros";
 import Itens from "./Itens/Itens";
 
+/**
+ * Página Receitas
+ * 
+ * @returns {JSX.Element} Elemento JSX contendo a página do cardápio
+ */
+
 const Receitas = () => {
 
     const [filtro, setFiltro] = useState<number | null>(null);

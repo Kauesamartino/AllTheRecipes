@@ -17,7 +17,7 @@ export default function Recomendacoes() {
 
     return (
         <div className='bg-[#fff8f0] px-40 pb-20'>
-            <h3 className='text-[3rem] pt-[30px] pb-[50px]'>Recomendações da cozinha</h3>
+            <h3 className='text-[3rem] pt-[30px] pb-[50px]'>Recomendações nossas</h3>
             <div className='rounded-[2px] flex flex-wrap gap-[30px] justify-around'>
                 {receitasRecomendadas.map(item => (
                     <div key={item.id} className="">
