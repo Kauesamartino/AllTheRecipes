@@ -4,7 +4,7 @@ import { useState } from "react";
 import Filtros from "./Filtros/Filtros";
 import Itens from "./Itens/Itens";
 
-export default function Receitas() {
+const Receitas = () => {
 
     const [filtro, setFiltro] = useState<number | null>(null);
 
@@ -18,3 +18,4 @@ export default function Receitas() {
         </section>
     )
 }
+export default Receitas;

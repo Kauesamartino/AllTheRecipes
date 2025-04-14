@@ -9,7 +9,7 @@ export default function Item(props: Prato) {
     const { id, title, description, photo } = props;
     const router = useRouter();
     return (
-        <div className="content-start rounded-[10px] pointer flex flex-wrap p-[20px] transition duration-200 ease-in h-max-[200px]" onClick={() => router.push(`/prato/${id}`)}>
+        <div className="border border-gray-300 rounded-[10px] cursor-pointer flex flex-wrap p-[20px] transition duration-200 ease-in h-max-[200px] hover:scale-105 mb-[20px]" onClick={() => router.push(`/prato/${id}`)}>
             <div className="w-[300px] h-[200px] mb-[10px] overflow-hidden rounded-[8px]">
                 <Image
                     src={photo}
