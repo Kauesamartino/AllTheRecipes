@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 export default function Hero(){
     return(
         <div 
             style={{
-                backgroundImage: `url('/image.png')`,
+                backgroundImage: `url('/hero.png')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 width: '100%',

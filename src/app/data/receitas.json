@@ -2,9 +2,8 @@
     {
         "title": "Spaghetti",
         "description": "",
-        "photo": "",
+        "photo": "/spaghetti.png",
         "alt": "",
-        "price": 69,
         "id": 1,
         "category": {
             "id": 1,
@@ -13,9 +12,8 @@
     }, {
         "title": "Gnocchi",
         "description": "",
-        "photo": "",
+        "photo": "/gnocchi.png",
         "alt": "",
-        "price": 80,
         "id": 2,
         "category": {
             "id": 1,
@@ -24,9 +22,8 @@
     }, {
         "title": "Fettuccine Alfredo",
         "description": "",
-        "photo": "",
+        "photo": "/fettuccinealf.png",
         "alt": "",
-        "price": 75,
         "id": 3,
         "category": {
             "id": 1,
@@ -35,9 +32,8 @@
     }, {
         "title": "Torta de Morango",
         "description": "",
-        "photo": "",
+        "photo": "/tmorango.png",
         "alt": "",
-        "price": 30,
         "id": 4,
         "category": {
             "id": 2,
@@ -46,9 +42,8 @@
     }, {
         "title": "Cheesecake",
         "description": "",
-        "photo": "",
+        "photo": "/cheesecake.png",
         "alt": "",
-        "price": 40,
         "id": 5,
         "category": {
             "id": 2,
@@ -57,9 +52,8 @@
     }, {
         "title": "Mousse de Limão",
         "description": "",
-        "photo": "",
+        "photo": "/mlimao.png",
         "alt": "",
-        "price": 25,
         "id": 6,
         "category": {
             "id": 2,
@@ -68,9 +62,8 @@
     },{
         "title": "Parmegiana de Carne",
         "description": "",
-        "photo": "",
+        "photo": "/parmegiana.png",
         "alt": "",
-        "price": 110,
         "id": 7,
         "category": {
             "id": 3,
@@ -79,9 +72,8 @@
     },{
         "title": "Bife Wellington",
         "description": "",
-        "photo": "",
+        "photo": "/bifewellington.png",
         "alt": "",
-        "price": 150,
         "id": 8,
         "category": {
             "id": 3,
@@ -90,9 +82,8 @@
     },{
         "title": "T-Bone na Chapa com Batata",
         "description": "",
-        "photo": "",
+        "photo": "/tbone.png",
         "alt": "",
-        "price": 125,
         "id": 9,
         "category": {
             "id": 3,
