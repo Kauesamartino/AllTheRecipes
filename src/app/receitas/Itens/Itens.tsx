@@ -1,12 +1,12 @@
+"use client"
+
 import { useEffect, useState } from "react"
 import receitas from '../../data/receitas.json'
 import Item from "./Item/Item";
 
 
 interface Props {
-    busca: string,
-    filtro: number | null,
-    ordenador: string
+    filtro: number | null
 }
 
 export default function Itens(props: Props){

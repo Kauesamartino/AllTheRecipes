@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import receitas from '../../data/receitas.json'
 import { Prato } from '../../types/Prato';
+import Button from '../Button/Button';
 
 export default function Recomendacoes() {
     let receitasRecomendadas = [...receitas];
@@ -30,11 +31,10 @@ export default function Recomendacoes() {
                                 className="object-cover w-full h-full"
                             />
                         </div>
-                        <button
-                            className='bg-red-500 border-none rounded-md text-white cursor-pointer text-base font-bold py-2.5 px-0 w-full transition duration-200 ease hover:bg-red-700'
-                            onClick={() => redirecionarParaDetalhes(item)}>
-                            Ver mais
-                        </button>
+                        <Button
+                            label="Ver mais"
+                            onClick={() => redirecionarParaDetalhes(item)}
+                        />
                     </div>
                 ))}
             </div>

@@ -10,19 +10,17 @@ import { Prato } from '../../types/Prato'
 
 export default function TagsPratos({
     category,
-    serving,
-    description
+    serving
 }: Prato) {
     return (
         <>
-            <div className="flex flex-wrap justify-between mb-20 w-max-[700px]">
+            <div className="left-0">
                 
-                <div className="flex items-center rounded-full font-bold h-10 justify-center p-2">
-                    <div className={`tipo ${category.label.toLowerCase() === 'massas' ? 'bg-massas text-white' : ''} ${category.label.toLowerCase() === 'carnes' ? 'bg-carnes text-white' : ''} ${category.label.toLowerCase() === 'doces' ? 'bg-doces' : ''}`}>
-                        {category.label}
+                <div className="rounded-full h-10 gap-4">
+                    <div className='text-[#000]'>
+                        <span className='font-bold'>Categoria: </span>{category.label}
                     </div>
-                    <div className="">{serving}</div>
-                    <div className="">{description}</div>
+                    <div className=""><span className='font-bold'>Serve: </span>{serving} pessoas</div>
                 </div>
             </div>
         </>
