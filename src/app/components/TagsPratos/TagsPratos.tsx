@@ -14,7 +14,9 @@ export default function TagsPratos({
 }: Prato) {
     return (
         <>
-        
+            <div className="">
+                <div className=""></div>
+            </div>
         </>
     )
 }
