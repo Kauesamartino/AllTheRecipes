@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import { useRouter } from "next/navigation"
 
 export default function Header() {
 
@@ -11,9 +10,6 @@ export default function Header() {
     }, {
         label: 'Receitas',
         to: '/receitas'
-    }, {
-        label: 'Sobre',
-        to: '/sobre'
     }]
 
     return (

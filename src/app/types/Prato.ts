@@ -1,4 +1,4 @@
-import receitas from '../data/receitas.json';
+import receitas from '@/data/receitas.json';
 
 export type Receitas = typeof receitas;
 
