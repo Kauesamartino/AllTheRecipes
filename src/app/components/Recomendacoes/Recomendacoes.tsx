@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
-import receitas from '../../data/receitas.json'
+import receitas from '@/data/receitas.json'
 import { Prato } from '../../types/Prato';
 import Button from '../Button/Button';
 
