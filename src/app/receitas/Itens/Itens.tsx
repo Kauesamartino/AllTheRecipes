@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import receitas from '../../data/receitas.json'
+import receitas from '@/data/receitas.json'
 import Item from "./Item/Item";
 
 

@@ -3,10 +3,16 @@ import { useRouter } from 'next/navigation';
 import receitas from '@/data/receitas.json'
 import { Prato } from '../../types/Prato';
 import Button from '../Button/Button';
+import { useEffect, useState } from 'react';
 
 export default function Recomendacoes() {
-    let receitasRecomendadas = [...receitas];
-    receitasRecomendadas = receitasRecomendadas.sort(() => 0.5 - Math.random()).splice(0, 3);
+    const [receitasRecomendadas, setReceitasRecomendadas] = useState<Prato[]>([]);
+
+    useEffect(() => {
+        let receitasShuffled = [...receitas];
+        receitasShuffled = receitasShuffled.sort(() => 0.5 - Math.random()).splice(0, 3);
+        setReceitasRecomendadas(receitasShuffled);
+    }, []);
 
     const router = useRouter();
 
@@ -23,13 +29,15 @@ export default function Recomendacoes() {
                     <div key={item.id} className="">
                         <div className='w-[300px] h-[200px] mb-[10px] overflow-hidden rounded-[8px]'>
                             <Image
-                                src={item.photo}
-                                alt={item.alt}
+                                src={item.photo && item.photo !== '' ? item.photo : '/fallback.jpg'}
+                                alt={item.alt || 'Imagem de prato'}
                                 layout="fixed"
                                 width={300}
                                 height={200}
                                 className="object-cover w-full h-full"
                             />
+
+
                         </div>
                         <Button
                             label="Ver mais"
