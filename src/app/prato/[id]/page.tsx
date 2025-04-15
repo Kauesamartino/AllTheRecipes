@@ -25,7 +25,7 @@ export default function Prato() {
         <div className="bg-[#fff8f0] px-40 pb-20">
             {/* Botão para voltar à página anterior */}
             <button
-                className="bg-transparent rounded-none text-red-500 pointer text-[1.5rem] font-bold pt-4"
+                className="bg-transparent rounded-none text-red-500 cursor-pointer text-[1.5rem] font-bold pt-4"
                 onClick={() => router.back()}
             >
                 {"< Voltar"}
